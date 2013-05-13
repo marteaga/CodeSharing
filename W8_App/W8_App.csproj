@@ -103,12 +103,16 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\WP7_App\DeviceInfo.cs">
+      <Link>DeviceInfo.cs</Link>
+    </Compile>
     <Compile Include="..\WP7_App\Math.cs">
       <Link>Math.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DeviceInfo_W8.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
