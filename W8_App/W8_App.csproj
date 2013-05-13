@@ -100,17 +100,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="..\WP7_App\DeviceInfo.cs">
       <Link>DeviceInfo.cs</Link>
     </Compile>
     <Compile Include="..\WP7_App\MainPage_Common.cs">
       <Link>MainPage_Common.cs</Link>
-    </Compile>
-    <Compile Include="..\WP7_App\Math.cs">
-      <Link>Math.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -146,6 +140,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Math2">
+      <HintPath>..\Math2\bin\Release\Math2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
