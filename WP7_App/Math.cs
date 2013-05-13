@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Common
 {
-    public class Math2
+    public partial class Math2
     {
         private static Math2 _default;
         public static Math2 Default
@@ -41,6 +41,5 @@ namespace Common
         {
             return x / y;
         }
-
     }
 }
