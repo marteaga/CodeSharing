@@ -7,7 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="x" VerticalAlignment="Top"></TextBlock>
+        <TextBox InputScope="Number" Grid.Row="0" Name="x"></TextBox>
+        <TextBlock Text="y" Grid.Row="1" VerticalAlignment="Top"></TextBlock>
+        <TextBox InputScope="Number" Grid.Row="1" Name="y"></TextBox>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Name="btnAdd" Grid.Column="0">+</Button>
+            <Button Name="btnSubtract" Grid.Column="1">-</Button>
+            <Button Name="btnMultiply" Grid.Column="2">x</Button>
+            <Button Name="btnDivide" Grid.Column="3">/</Button>
+        </Grid>
+        <TextBlock Name="lblResult" Grid.Row="3" TextAlignment="Center">[Result]</TextBlock>
     </Grid>
 </Page>

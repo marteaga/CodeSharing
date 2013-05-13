@@ -24,6 +24,26 @@ namespace W8_App
         public MainPage()
         {
             this.InitializeComponent();
+
+            btnAdd.Click += (o, e) =>
+            {
+                lblResult.Text = Common.Math2.Default.Add(this.X, this.Y).ToString();
+            };
+
+            btnSubtract.Click += (o, e) =>
+            {
+                lblResult.Text = Common.Math2.Default.Subtract(this.X, this.Y).ToString();
+            };
+
+            btnMultiply.Click += (o, e) =>
+            {
+                lblResult.Text = Common.Math2.Default.Multiple(this.X, this.Y).ToString();
+            };
+
+            btnDivide.Click += (o, e) =>
+            {
+                lblResult.Text = Common.Math2.Default.Divide(this.X, this.Y).ToString();
+            };
         }
 
         /// <summary>
@@ -33,6 +53,22 @@ namespace W8_App
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private int X
+        {
+            get
+            {
+                return Int32.Parse(x.Text);
+            }
+        }
+
+        private int Y
+        {
+            get
+            {
+                return Int32.Parse(y.Text);
+            }
         }
     }
 }
