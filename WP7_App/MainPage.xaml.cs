@@ -40,6 +40,7 @@ namespace WP7_App
                 lblResult.Text = Common.Math2.Default.Divide(float.Parse(x.Text), float.Parse(y.Text)).ToString();
             };
 
+            System.Diagnostics.Debug.WriteLine(Common.DeviceInfo.Default.DeviceId);
         }
 
         private int X
