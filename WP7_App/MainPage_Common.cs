@@ -5,6 +5,8 @@ using System.Text;
 
 #if WP8
 namespace WP8_App
+#elif W8
+namespace W8_App
 #else
 namespace WP7_App
 #endif

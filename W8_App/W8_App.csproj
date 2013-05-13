@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;W8</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -29,7 +29,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <DefineConstants>TRACE;NETFX_CORE;W8</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -105,6 +105,9 @@
   <ItemGroup>
     <Compile Include="..\WP7_App\DeviceInfo.cs">
       <Link>DeviceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\WP7_App\MainPage_Common.cs">
+      <Link>MainPage_Common.cs</Link>
     </Compile>
     <Compile Include="..\WP7_App\Math.cs">
       <Link>Math.cs</Link>

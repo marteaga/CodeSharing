@@ -21,32 +21,7 @@ namespace W8_App
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-
-            btnAdd.Click += (o, e) =>
-            {
-                lblResult.Text = Common.Math2.Default.Add(this.X, this.Y).ToString();
-            };
-
-            btnSubtract.Click += (o, e) =>
-            {
-                lblResult.Text = Common.Math2.Default.Subtract(this.X, this.Y).ToString();
-            };
-
-            btnMultiply.Click += (o, e) =>
-            {
-                lblResult.Text = Common.Math2.Default.Multiple(this.X, this.Y).ToString();
-            };
-
-            btnDivide.Click += (o, e) =>
-            {
-                lblResult.Text = Common.Math2.Default.Divide(this.X, this.Y).ToString();
-            };
-
-            System.Diagnostics.Debug.WriteLine(Common.DeviceInfo.Default.DeviceId);
-        }
+        
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -57,20 +32,6 @@ namespace W8_App
         {
         }
 
-        private int X
-        {
-            get
-            {
-                return Int32.Parse(x.Text);
-            }
-        }
-
-        private int Y
-        {
-            get
-            {
-                return Int32.Parse(y.Text);
-            }
-        }
+        
     }
 }
