@@ -37,7 +37,7 @@ namespace WP7_App
 
             btnDivide.Click += (o, e) =>
             {
-                lblResult.Text = Common.Math2.Default.Divide(this.X, this.Y).ToString();
+                lblResult.Text = Common.Math2.Default.Divide(float.Parse(x.Text), float.Parse(y.Text)).ToString();
             };
 
         }
