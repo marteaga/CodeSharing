@@ -38,6 +38,7 @@ namespace WP8_App
                 lblResult.Text = Common.Math2.Default.Divide(this.X, this.Y).ToString();
             };
 
+            System.Diagnostics.Debug.WriteLine(Common.DeviceInfo.Default.DeviceId);
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
