@@ -5,20 +5,20 @@ using System.Text;
 
 namespace Common
 {
-    public class Math
+    public class Math2
     {
-        private static Math _default;
-        public static Math Default
+        private static Math2 _default;
+        public static Math2 Default
         {
             get
             {
                 if (_default == null)
-                    _default = new Math();
+                    _default = new Math2();
                 return _default;
             }
         }
 
-        private Math()
+        private Math2()
         {
         }
 
