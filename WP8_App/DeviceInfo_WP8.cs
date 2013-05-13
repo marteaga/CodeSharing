@@ -4,9 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WP8_App
+namespace Common
 {
-    class DeviceInfo_WP8
+    public partial class DeviceInfo
     {
+        private string m_DeviceUniqueId;
+        public string DeviceId
+        {
+            get
+            {
+                if (m_DeviceUniqueId == null)
+                {
+                    m_DeviceUniqueId = Windows.Phone.System.Analytics.HostInformation.PublisherHostId;
+                }
+                return m_DeviceUniqueId;
+            }
+        }
     }
 }

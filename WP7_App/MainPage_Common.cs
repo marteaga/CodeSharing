@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+#if WP8
+namespace WP8_App
+#else
 namespace WP7_App
+#endif
 {
     public partial class MainPage
     {
@@ -29,7 +33,11 @@ namespace WP7_App
 
             btnDivide.Click += (o, e) =>
             {
+#if WP7
                 lblResult.Text = Common.Math2.Default.Divide(float.Parse(x.Text), float.Parse(y.Text)).ToString();
+#else
+                lblResult.Text = Common.Math2.Default.Divide(this.X, this.Y).ToString();
+#endif
             };
 
             System.Diagnostics.Debug.WriteLine(Common.DeviceInfo.Default.DeviceId);

@@ -16,20 +16,6 @@ namespace WP7_App
     public partial class MainPage : PhoneApplicationPage
     {
 
-        private int X
-        {
-            get
-            {
-                return Int32.Parse(x.Text);
-            }
-        }
-
-        private int Y
-        {
-            get
-            {
-                return Int32.Parse(y.Text);
-            }
-        }
+        
     }
 }
